@@ -23,9 +23,9 @@
   ],
   "accessWidener": "coroutil.accesswidener",
   "depends": {
-    "fabricloader": ">=0.16.9",
+    "fabricloader": ">=0.19.5",
     "fabric-api": "*",
-    "minecraft": "~1.21.4",
-    "java": ">=21"
+    "minecraft": "~26.3",
+    "java": ">=25"
   }
 }

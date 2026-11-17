@@ -30,3 +30,7 @@ run
 *.class
 *.war
 *.ear
+*.jar
+!gradle/wrapper/*.jar
+.antigravity
+.gemini

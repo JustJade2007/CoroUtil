@@ -1,5 +1,5 @@
 plugins {
-	id 'fabric-loom' version '1.9-SNAPSHOT'
+	id 'net.fabricmc.fabric-loom' version '1.18.4'
 	id 'maven-publish'
 	id "com.hypherionmc.modutils.modpublisher" version "2.1.6"
 }
@@ -41,6 +41,10 @@ repositories {
 	maven {
 		url "https://cursemaven.com"
 	}
+	maven {
+		name = "Fuzs Mod Resources"
+		url = "https://raw.githubusercontent.com/Fuzss/modresources/main/maven/"
+	}
 	flatDir {
 		dir 'libs'
 	}
@@ -67,12 +71,9 @@ dependencies {
 	// Fabric API. This is technically optional, but you probably want it anyway.
 	include(modImplementation "net.fabricmc.fabric-api:fabric-api:${project.fabric_version}")
 
-	//include(modImplementation("ForgeConfigAPIPort:ForgeConfigAPIPort:v8.0.0-1.20.1-Fabric"))
-	//using https://www.curseforge.com/minecraft/mc-mods/forge-config-api-port-fabric/files/4583000
-	include(modImplementation("curse.maven:forge-config-api-port-fabric-547434:5982389"))
+	include(modImplementation("fuzs.forgeconfigapiport:forgeconfigapiport-fabric:26.3.1"))
 	implementation 'com.electronwill.night-config:core:3.7.3'
 	implementation 'com.electronwill.night-config:toml:3.7.3'
-	//include(modImplementation("fuzs.forgeconfigapiport:forgeconfigapiport-fabric:v8.0.0-1.20.1-Fabric"))
 }
 
 //If there's mixins
