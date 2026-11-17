@@ -1,16 +1,11 @@
-# CoroUtil (Fabric)
+# CoroUtil (26.3 Fabric)
 
-Utility library mod for Corosauce's Minecraft mods.
+CoroUtil ported to Minecraft 26.3 on Fabric.
 
-## Minecraft Version Support
-- **Current Version:** `26.3` (Wilderness Bound)
-- **Mod Version:** `1.3.9`
-- **Fabric Loader:** `>=0.19.5`
-- **Java Requirement:** Java 25+
-
-## Building
-To build CoroUtil Fabric from source:
-```bash
-./gradlew build
-```
-The compiled jar will be located in `build/libs/`.
+## Changes
+- Ported to Minecraft 26.3 and Java 25.
+- Upgraded Fabric Loader (0.20.1) and Fabric API (0.166.2+26.3).
+- Updated ForgeConfigAPIPort to 26.3.1 (v5 API).
+- Updated command permissions to 26.3 `PermissionCheck`.
+- Updated particle color lookup to 26.3 model system.
+- Updated access widener to official 26.3 mappings namespace.
